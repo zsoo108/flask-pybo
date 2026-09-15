@@ -5,6 +5,7 @@
 <div class="container">
     <h5 class="my-3 border-bottom pb-2">질문 등록</h5>
     <form method="post" class="my-3" >
+        <!--브라우저에 있는 csrf 토큰 확인-->
         {{ form.csrf_token }}
         <!-- 오류 표시 start -->
         {% if form.errors %}
